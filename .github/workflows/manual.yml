@@ -9,8 +9,7 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
-        run: |
-          ls ${{ github.workspace }}
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
