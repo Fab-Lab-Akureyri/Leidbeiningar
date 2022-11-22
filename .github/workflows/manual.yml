@@ -1,0 +1,20 @@
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    name: Publish Document
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Publish PDF Document
+        uses: shrink/actions-document-publish@v1
+        id: publish-document
+        with:
+          sources: 'docs/wegstr.md'
+      - uses: canastro/copy-file-action@master
+        with:
+          source: ".publish-docs/document.pdf"
+          target: "my-pdf-name.pdf"
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: "my-pdf-name.pdf" # same as `target` in the previous step
+          default_author: github_actions
