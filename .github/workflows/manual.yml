@@ -9,7 +9,6 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
-    - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
       - uses: actions/checkout@v3
