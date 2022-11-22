@@ -12,7 +12,7 @@ TODO
 
 ### Stilla upp koparplötu
 
-TODO
+TODO!
 
 ### Skipta um fræsibita
 
