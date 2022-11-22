@@ -27,4 +27,4 @@ jobs:
         with:
           name: docs
           path: pdfs
-      - run: ls ${{ github.workspace }}
+      - run: ls ${{ github.workspace }}/pdfs
