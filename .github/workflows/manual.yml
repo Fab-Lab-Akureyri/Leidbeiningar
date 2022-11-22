@@ -29,4 +29,4 @@ jobs:
         with:
           message: 'Updated pdfs'
           add: 'pdfs/*.pdf --force'
-          cwd: './pathToRepo/'
+          cwd: './'
