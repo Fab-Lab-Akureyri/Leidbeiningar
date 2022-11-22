@@ -17,6 +17,9 @@ jobs:
     steps:
       - run: ls ${{ github.workspace }}
       - uses: actions/checkout@v3
+      - uses: JesseTG/rm@v1.0.3
+        with: 
+          path: /pdfs
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: docs
