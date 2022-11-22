@@ -1,7 +1,4 @@
-on:
-  push:
-    paths:
-      - 'doc/**'
+on: push
 
 name: CreatePDFs
 
