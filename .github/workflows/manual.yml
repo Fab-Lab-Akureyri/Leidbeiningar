@@ -25,16 +25,11 @@ jobs:
           # for example <img src="./images/file-name.png">
           image_import: ./images
           # Default is true, can set to false to only get PDF files
-          build_html: false
+          build_html: true
       - uses: actions/upload-artifact@v3
         with:
-          name: docs
           path: pdfs
-      - uses: canastro/copy-file-action@master
-        with:
-          source: "pdfs/"
-          target: "pdfs/"
       - uses: EndBug/add-and-commit@v9
         with:
-          add: "pdfs/**" # same as `target` in the previous step
+          add: "pdfs/*.pdf" # same as `target` in the previous step
           default_author: github_actions
