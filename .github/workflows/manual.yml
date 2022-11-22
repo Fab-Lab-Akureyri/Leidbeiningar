@@ -25,3 +25,6 @@ jobs:
         with:
           name: docs
           path: pdfs
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
