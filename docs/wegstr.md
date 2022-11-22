@@ -4,7 +4,7 @@
 
 ## Stafrænt viðmót 
 
-TODO!
+TODO
 
 ## Uppsetning fræsara
 
