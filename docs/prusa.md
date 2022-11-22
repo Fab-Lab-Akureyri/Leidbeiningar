@@ -1,6 +1,4 @@
-# Prusa mk3s
-
-TODO 
+# Prusa mk3s 
 
 ## Slökkva og kveikja
 
