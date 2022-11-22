@@ -28,5 +28,5 @@ jobs:
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Updated pdfs'
-          add: 'pdfs/*.pdf --force'
+          add: './pdfs/*.pdf --force'
           cwd: './'
