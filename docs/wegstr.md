@@ -21,3 +21,7 @@ TODO
 ### Stilla ása (X,Y,Z)
 
 TODO
+
+#### Sjálfvirk stilling á Z-ás
+
+TODO
