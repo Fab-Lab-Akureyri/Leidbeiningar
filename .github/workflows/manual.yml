@@ -9,6 +9,7 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
+      - run: ls ${{ github.workspace }}
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
@@ -19,13 +20,15 @@ jobs:
           image_import: ./images
           # Default is true, can set to false to only get PDF files
           build_pdf: true
-          build_html: false
-          table_of_contents: false
-      - uses: actions/upload-artifact@v2.2.4
+          build_html: true
+          table_of_contents: true
+      - uses: actions/upload-artifact@v3
         with:
           name: docs
-          path: ./pdfs
+          path: pdfs
+      - run: ls ${{ github.workspace }}/pdfs
       - uses: EndBug/add-and-commit@v9
         with:
-          message: 'Update pdfs'
-          add: 'pdfs/ --force'
+          message: 'Updated pdfs'
+          add: 'pdfs/*.pdf --force'
+#          cwd: './pathToRepo/'
