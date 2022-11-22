@@ -21,10 +21,10 @@ jobs:
           build_pdf: true
           build_html: false
           table_of_contents: false
-      #- uses: actions/upload-artifact@v3
-      #  with:
-      #    name: docs
-      #    path: pdfs
+      - uses: actions/upload-artifact@v3
+        with:
+          name: docs
+          path: ./pdfs
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Updated pdfs'
