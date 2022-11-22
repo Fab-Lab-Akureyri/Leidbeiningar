@@ -3,9 +3,6 @@
 name: Docs to PDF
 # This workflow is triggered on pushes to the repository.
 on: push
-  paths:
-    - 'docs/**.md'
-    - 'docs/images/**'
 
 jobs:
   converttopdf:
