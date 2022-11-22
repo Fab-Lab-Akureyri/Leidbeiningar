@@ -1,6 +1,6 @@
 # Prusa mk3scd 
 
-TODO!?
+Í Fab Lab Akureyri er einn [Prusa MK3S+](https://www.prusa3d.com/category/original-prusa-i3-mk3s/) þrívíddarprentari. 
 
 ## Slökkva og kveikja
 
