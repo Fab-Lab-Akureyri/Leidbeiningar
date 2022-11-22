@@ -9,7 +9,6 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
-      - run: ls ${{ github.workspace }}
       - uses: actions/checkout@v3
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
@@ -26,7 +25,6 @@ jobs:
         with:
           name: docs
           path: pdfs
-      - run: ls ${{ github.workspace }}/pdfs
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Updated pdfs'
