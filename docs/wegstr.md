@@ -4,7 +4,7 @@
 
 ## Stafrænt viðmót 
 
-TODO: Lýsing á appi og ferlar
+TODO: Lýsing á appi og ferlar.
 
 ## Uppsetning fræsara
 
