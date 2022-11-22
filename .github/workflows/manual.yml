@@ -33,7 +33,7 @@ jobs:
       - uses: canastro/copy-file-action@master
         with:
           source: "/pdfs/**"
-          target: "/pdfs"
+          target: "/pdfs/"
       - uses: EndBug/add-and-commit@v9
         with:
           add: "pdfs/**" # same as `target` in the previous step
