@@ -20,6 +20,9 @@ jobs:
       - uses: JesseTG/rm@v1.0.3
         with: 
           path: pdfs
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Remove pdfs before renewing them
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: docs
