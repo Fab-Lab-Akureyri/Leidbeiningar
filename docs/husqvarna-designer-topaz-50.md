@@ -4,4 +4,8 @@
 
 ## Notkunarreglur
 
-## Inkstich
+## Inkstich 
+
+### Install
+
+### Default workflow
