@@ -1,7 +1,7 @@
-# .github/workflows/convert-to-pdf.yml
+# .github/workflows/buildPDFs.yml
 
 name: Docs to PDF
-# This workflow is triggered on pushes to the repository.
+# This workflow is triggered on pushes within the docs folder
 on:
   push:
     branches:
@@ -15,7 +15,7 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     steps:
-      - run: ls ${{ github.workspace }}
+      #- run: ls ${{ github.workspace }}
       - uses: actions/checkout@v3
       - uses: JesseTG/rm@v1.0.3
         with: 
@@ -38,7 +38,7 @@ jobs:
         with:
           name: docs
           path: pdfs
-      - run: ls ${{ github.workspace }}/pdfs
+      #- run: ls ${{ github.workspace }}/pdfs
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Updated pdfs'
