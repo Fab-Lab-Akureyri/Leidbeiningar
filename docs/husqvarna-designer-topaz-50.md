@@ -4,7 +4,7 @@
 
 ## Notkunarreglur
 
-## Inkstich 
+## Inkstitch 
 
 ### Install
 
