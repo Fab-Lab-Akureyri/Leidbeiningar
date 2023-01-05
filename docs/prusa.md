@@ -4,7 +4,7 @@
 
 ## Slökkva og kveikja
 
-TODO!
+TODO
 
 Sýna á fablab fundi
 
