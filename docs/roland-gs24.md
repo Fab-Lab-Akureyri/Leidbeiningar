@@ -10,15 +10,15 @@ TODO
 
 ### Að skipta um hníf
 
-![Losa](../docs/images/roland-gs24/gs24-00.jpg)
-![Losa](../docs/images/roland-gs24/gs24-01.jpg)
-![Losa](../docs/images/roland-gs24/gs24-02.jpg)
-![Losa](../docs/images/roland-gs24/gs24-03.jpg)
-![Losa](../docs/images/roland-gs24/gs24-04.jpg)
-![Losa](../docs/images/roland-gs24/gs24-05.jpg)
-![Losa](../docs/images/roland-gs24/gs24-06.jpg)
-![Losa](../docs/images/roland-gs24/gs24-07.jpg)
-![Losa](../docs/images/roland-gs24/gs24-09.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-00.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-01.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-02.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-03.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-04.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-05.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-06.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-07.jpg)
+![Losa](/Leidbeiningar/docs/images/roland-gs24/gs24-09.jpg)
 
 Losa hníf úr
 
