@@ -11,21 +11,27 @@ TODO
 ### Að skipta um hníf
 
 
---
-
 <img src="./images/roland-gs24/gs24-00.jpg">
+<img src="./images/roland-gs24/gs24-01.jpg">
+<img src="./images/roland-gs24/gs24-02.jpg">
+<img src="./images/roland-gs24/gs24-03.jpg">
+<img src="./images/roland-gs24/gs24-04.jpg">
+<img src="./images/roland-gs24/gs24-05.jpg">
+<img src="./images/roland-gs24/gs24-06.jpg">
+<img src="./images/roland-gs24/gs24-07.jpg">
+<img src="./images/roland-gs24/gs24-08.jpg">
+<img src="./images/roland-gs24/gs24-09.jpg">
 
---
 
-![Losa](../images/roland-gs24/gs24-00.jpg)
-![Losa](../images/roland-gs24/gs24-01.jpg)
-![Losa](../images/roland-gs24/gs24-02.jpg)
-![Losa](../images/roland-gs24/gs24-03.jpg)
-![Losa](../images/roland-gs24/gs24-04.jpg)
-![Losa](../images/roland-gs24/gs24-05.jpg)
-![Losa](../images/roland-gs24/gs24-06.jpg)
-![Losa](../images/roland-gs24/gs24-07.jpg)
-![Losa](../images/roland-gs24/gs24-09.jpg)
+![Losa](./images/roland-gs24/gs24-00.jpg)
+![Losa](./images/roland-gs24/gs24-01.jpg)
+![Losa](./images/roland-gs24/gs24-02.jpg)
+![Losa](./images/roland-gs24/gs24-03.jpg)
+![Losa](./images/roland-gs24/gs24-04.jpg)
+![Losa](./images/roland-gs24/gs24-05.jpg)
+![Losa](./images/roland-gs24/gs24-06.jpg)
+![Losa](./images/roland-gs24/gs24-07.jpg)
+![Losa](./images/roland-gs24/gs24-09.jpg)
 
 
 1. Losa hníf úr
