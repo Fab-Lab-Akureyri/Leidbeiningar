@@ -10,6 +10,7 @@ TODO
 
 ### Að skipta um hníf
 
+<img src="../docs/images/roland-gs24/gs24-00.jpg">
 ![Losa](../images/roland-gs24/gs24-00.jpg)
 ![Losa](../images/roland-gs24/gs24-01.jpg)
 ![Losa](../images/roland-gs24/gs24-02.jpg)
