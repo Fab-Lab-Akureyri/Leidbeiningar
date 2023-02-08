@@ -20,7 +20,8 @@ TODO
 ![Losa](../images/roland-gs24/gs24-07.jpg)
 ![Losa](../images/roland-gs24/gs24-09.jpg)
 
-Losa hníf úr
+
+1. Losa hníf úr
 
 Finna bút til að prófa og góðan vinnuflöt
 
