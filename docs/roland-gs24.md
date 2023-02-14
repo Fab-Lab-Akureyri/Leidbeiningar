@@ -6,6 +6,20 @@ Vínylskeri
 
 TODO
 
+### Force / kraftur
+
+- Límmiðafilma: ~170
+
+- Fatafilma: ~230
+
+Sjá nánar að neðan 
+
+### Snúningsstefna rúllu
+
+- Límmiðafilma: Skera í framhliðina
+
+- Fatafimla: Skera í bakhlið
+
 ## Viðhald
 
 ### Að skipta um hníf
