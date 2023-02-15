@@ -24,7 +24,7 @@ Sjá nánar að neðan
 
 ### Að skipta um hníf
 
-![Losa](./images/roland-gs24/gs24-00.jpg){: style="height:150px;width:150px"}
+![Losa](./images/roland-gs24/gs24-00.jpg)
 ![Losa](./images/roland-gs24/gs24-01.jpg)
 ![Losa](./images/roland-gs24/gs24-02.jpg)
 ![Losa](./images/roland-gs24/gs24-03.jpg)
