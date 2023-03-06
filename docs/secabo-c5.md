@@ -4,10 +4,7 @@
 
 Kveikt er á vélinni með rauða rofanum vinstra megin á henni. 
 
-Á skjánum stendur þá :
-
--  : ýttu á `OK`
-- `-C-` eða `-F-` :
+### Skýringar fyrir skjá
 
 |   Skjár       |   LED     |   Veldu       |   Skýring
 |   ---         |   ---     |   ---         |   ---
