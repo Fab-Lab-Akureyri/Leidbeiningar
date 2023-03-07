@@ -23,7 +23,7 @@ Almennt er hægt að miða við 160°c fyrir fatafilmur, en farið eftir leiðbe
 
 **Bannað að brenna sig!**
 
-Staðsetjið efnið á pressunni, gætið að því saumar og krumpur geta skemmt pressinguna. 
+Staðsetjið efnið á pressunni, gætið að því saumar og krumpur geta komið í veg fyrir að límingin takist vel.
 
 Gott er að hita fötin í 5-8 sekúndur áður en filman er sett á. 
 
