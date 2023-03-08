@@ -21,7 +21,7 @@ Almennt er hægt að miða við 160°c fyrir fatafilmur, en farið eftir leiðbe
 
 ## Notkun
 
-:fire: **Bannað að brenna sig!** :fire:
+**Bannað að brenna sig!**
 
 Staðsetjið efnið á pressunni, gætið að því saumar og krumpur geta komið í veg fyrir að límingin heppnist.
 
