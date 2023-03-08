@@ -10,7 +10,7 @@ Leiðbeiningarnar koma vonandi starfsfólki og gestum fleiri Fab Lab-a til góð
 
 Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft. 
 
-| Tilbúið | Nafn | Tilgangur |
+|     Tilbúið           |       Nafn                |      Tilgangur        |
 |       ---             |       ---                 |   ---                 |
 |                       | Husqvarna Designer Topaz  |   Útsaumsvél          |
 |                       | Prusa MK3s                |   Þrívíddarprentari   |
