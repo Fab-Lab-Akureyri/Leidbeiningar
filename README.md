@@ -16,4 +16,4 @@ Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft.
 |                       | Prusa MK3s                |   Þrívíddarprentari   |
 |                       | Roland GS34               |   Vínylskeri          |
 |  :heavy_check_mark:   | Secabo C5                 |   Hitapressa          |
-|                       | Wegstr                    |   Rafrásafræsari      |
+|                       | Wegstr CNC                |   Rafrásafræsari      |
