@@ -6,6 +6,10 @@ Leiðbeiningarnar koma vonandi starfsfólki og gestum fleiri Fab Lab-a til góð
 
 ## Leiðbeiningar &rarr; pdf 
 
+`.md` skrár í `docs` er breytt sjálfkrafa í `pdf` skrár í samnefndri möppu. 
+
+Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft. 
+
 | Tilbúið | Nafn | Tilgangur |
 |       ---             |       ---                 |   ---                 |
 |                       | Husqvarna Designer Topaz  |   Útsaumsvél          |
