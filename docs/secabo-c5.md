@@ -31,4 +31,6 @@ Gætið að því að snúa filmunni rétt, glæra plastfilman á að vísa upp 
 
 Með ákveðinni hreyfingu, þrýstið niður þar til pressan læsist. Niðurtalning hefst um leið. 
 
-Þegar vélin pípir, opnið pressuna og fjarlægið plastfilmuna af sem fyrst, með jafnri samfelldri hreyfingu. Best er að fjarlægja filmuna á ská, þ.e.a.s. í 45°.
+Þegar vélin pípir, opnið pressuna og fjarlægið plastfilmuna af sem fyrst, með jafnri samfelldri hreyfingu. 
+
+Best er að fjarlægja filmuna á ská, þ.e.a.s. í 45°.
