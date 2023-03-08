@@ -12,12 +12,14 @@ Kveikt er á vélinni með rauða rofanum vinstra megin.
 | `-C-`/`-F-`   |           | `-C-` og `OK` |   Selsíus vs farenheit
 | `160°`        |   `Temp`  | `↑/↓` og `OK` |   Hitastig
 | `15`          |   `Time`  | `↑/↓` og `OK` |   Niðurtalning
-| `LO`          |           |               |   `lo` á meðan pressan hitnar
+| `LO`          |           |               |   (Low) `LO` á meðan pressan hitnar
 | Niðurtalning  |   `CD-L`  |               |   Niðurtalning m.v. `Time`
 
 ## Hitastig
 
-Almennt er hægt að miða við 160°c fyrir fatafilmur, en farið eftir leiðbeiningum framleiðenda. 
+Skjárinn sýnir `LO` á meðan hitastigið er undir 100°c. Tækið gefur frá sér *PÍP* þegar kjörstigahiti er náð. 
+
+Almennt er hægt að miða við **160°c** fyrir fatafilmur, en farið eftir leiðbeiningum framleiðenda. 
 
 ## Notkun
 
@@ -27,7 +29,7 @@ Staðsetjið efnið á pressunni, gætið að því saumar og krumpur geta komi�
 
 Gott er að hita fötin í 5-8 sekúndur áður en filman er sett á. 
 
-Gætið að því að snúa filmunni rétt, glæra plastfilman á að vísa upp að hitafletinum. 
+Gætið að því að snúa filmunni rétt. Bakhliðin (glansfilman) á að vísa upp að hitafletinum. 
 
 Með ákveðinni hreyfingu, þrýstið niður þar til pressan læsist. Niðurtalning hefst um leið. 
 
