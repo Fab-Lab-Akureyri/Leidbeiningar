@@ -6,11 +6,11 @@
 
 ## Inkstitch 
 
+[https://wwww.inkstitch.org/](https://www.inkstitch.org/)
+
 Inkstitch er viðbót við Inkscape. Það gerir okkur kleift að breyta **vektor** hlutum í útsaumsskjal. 
 
 ## Uppsetning
-
-Hlekkur fyrir niðurhal: [https://wwww.inkstitch.org/](https://www.inkstitch.org/)
 
 Eftir uppsetningu þá þarf að loka Inkscape og opna aftur. 
 
