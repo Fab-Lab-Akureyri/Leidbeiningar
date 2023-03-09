@@ -6,8 +6,6 @@
 
 TODO
 
-Sýna á fablab fundi
-
 ## Skipta um filament
 
 TODO
