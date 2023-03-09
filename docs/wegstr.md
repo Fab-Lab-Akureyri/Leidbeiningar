@@ -2,11 +2,12 @@
 
 ## Að kveikja
 
-- Ræsið Wegstr forritið í tölvunni. Ef slökkt er á fræsinum stendur: `Device searching`
+Ræsið Wegstr forritið í tölvunni. Ef slökkt er á fræsinum stendur: `Device searching`
 
-- Kveikið á vélinni með bláa rofanum ofan á henni.
-    - Blátt ljós logar stöðugt og í Wegstr forritinu stendur: `Device released`.
-    - Ýtið á svarta `START` rofann. Nú ætti að standa: `Device ready`.
+Kveikið á vélinni með bláa rofanum ofan á henni.
+
+- Blátt ljós logar stöðugt og í Wegstr forritinu stendur: `Device released`.
+- Ýtið á svarta `START` rofann. Nú ætti að standa: `Device ready`.
 
 ### Að stilla upp koparplötu
 
