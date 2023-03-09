@@ -39,3 +39,5 @@ ATHUGA: Einungis er hægt að nota USB lykil sem fylgir vélinni.
 5. Save
 
 ### Notkun Husqvarna
+
+TODO
