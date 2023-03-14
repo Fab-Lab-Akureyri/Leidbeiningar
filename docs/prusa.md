@@ -4,11 +4,19 @@
 
 Höfuðrofinn er hægra megin að aftan. 
 
-
-
-## Verk valið
+## Prentun
 
 **ATH:** Verkið verður að vera á `.gcode` formi. 
+
+### SD kort
+
+Hægt er að hlaða inn verki með SD korti. Rauf fyrir kortið er vinstra megin við skjáinn. 
+
+Setjið verkið á SD kort (USB kortalesari á sér stað á veggnum vinstra megin við prentarana). Setjið kortið aftur í og þá birtist: `Sorting files`
+
+Að því loknu finnið þið skjalið ykkar með því að snúa hjólinu hægra megin. Veljið skjalið með því að þrýsta á hjólið. 
+
+Þá hitar prentarinn prentflötinn og stútinn og byrjar loks að prenta þegar réttu hitastigi er náð. 
 
 ### Hreinlæti
 
@@ -16,20 +24,12 @@ Nauðsynlegt er að fjarlægja allar leyfar af prentfletinum áður en næsta pr
 
 Einnig þarf að fituhreinsa flötinn, en það er gert með ísóprópanóli og strokið af með tusku. 
 
-### SD kort
-
-Hægt er að hlaða inn verki með SD korti. Rauf fyrir kortið er vinstra megin við skjáinn. 
-
-Setjið verkið á SD kort (USB kortalesari á sér stað á veggnum vinstra megin við prentarna). Setjið kortið aftur í og þá birtist: `Sorting files`
-
-Að því loknu finnið þið skjalið ykkar með því að snúa hjólinu hægra megin. Veljið skjalið með því að þrýsta á hjólið. 
-
-Þá hitar prentarinn prentflötinn og stútinn og byrjar loks að prenta þegar réttu hitastigi er náð. 
-
-### Prentun
+### Byrjun á prenti
 
 Gott er að fylgjast með fyrstu umferðunum og staðfesta að prentunin nái góðri festu. 
 
 ## Að skipta um þráð
+
+
 
 TODO
