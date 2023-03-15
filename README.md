@@ -21,7 +21,7 @@ Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft.
 | :white_square_button: | Husqvarna Designer Topaz  |   Útsaumsvél          |
 | :white_square_button: | Prusa MK3s                |   Þrívíddarprentari   |
 | :white_square_button: | Roland GS34               |   Vínylskeri          |
-|:ballot_box_with_check:| Secabo C5                 |   Hitapressa          |
+| :white_check_mark:    | Secabo C5                 |   Hitapressa          |
 | :white_square_button: | Wegstr CNC                |   Rafrásafræsari      |
 | :white_square_button: | Shopbot                   |   Stór fræsivél       |
 | :white_square_button: | Epilog laser              |   Laserskurðarvél     |
