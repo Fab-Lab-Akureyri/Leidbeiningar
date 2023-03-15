@@ -23,3 +23,5 @@ Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft.
 |                       | Roland GS34               |   Vínylskeri          |
 |  :heavy_check_mark:   | Secabo C5                 |   Hitapressa          |
 |                       | Wegstr CNC                |   Rafrásafræsari      |
+|                       | Shopbot                   |   Stór fræsivél       |
+|                       | Epilog laser              |   Laserskurðarvél     |
