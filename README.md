@@ -25,3 +25,7 @@ Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft.
 | :white_square_button: | Wegstr CNC                |   Rafrásafræsari      |
 | :white_square_button: | Shopbot                   |   Stór fræsivél       |
 | :white_square_button: | Epilog laser              |   Laserskurðarvél     |
+| :white_square_button: | iColor 600                |   Litaprentari        |
+| :white_square_button: | Mayku Multiplier          |   Vacuum formunarvél  |
+| :white_square_button: | Roland Modela MDX 40      |   Fræsivél og skönnun |
+| :white_square_button: | Ultimaker 2+              |   Þrívíddarprentari   |
