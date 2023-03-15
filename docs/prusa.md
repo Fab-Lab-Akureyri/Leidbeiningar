@@ -32,4 +32,13 @@ Gott er að fylgjast með fyrstu umferðunum og staðfesta að prentunin nái g�
 
 ## Að skipta um þráð
 
-TODO
+Ýtið á svarta hnappinn til að fá upp valmyndina. 
+
+* Veldu `Unload filament`
+* Veldu viðeigandi efnisgerð (yfirleitt `PLA`)
+
+Bíðið eftir að stúturinn nái settu hitastigi. Prentarinn gefur frá sér hljóðmerki þegar hitastigi er náð. 
+
+Fylgdu leiðbeiningum á skjánum. 
+
+**ATH:** Klippið 1-2 cm af endanum áður en gengið er frá honum. Sama á við við þráðinn sem settur er í, ef endinn er ósnyrtur þarf að klippa af honum áður hann er settur í. 
