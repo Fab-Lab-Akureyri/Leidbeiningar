@@ -10,6 +10,12 @@ Leiðbeiningarnar koma vonandi starfsfólki og gestum fleiri Fab Lab-a til góð
 
 Hægt vísa beint í síðuna, viðeigandi síðu eða pdf skjalið sjálft. 
 
+## QR kóðar
+
+Í Fab Lab Akureyri má finna QR við helstu tæki. Skannið kóðann með snjalltæki til að nálgast leiðbeiningarnar.
+
+## Staðan
+
 |     Tilbúið           |       Nafn                |      Tilgangur        |
 |       ---             |       ---                 |   ---                 |
 |                       | Husqvarna Designer Topaz  |   Útsaumsvél          |
