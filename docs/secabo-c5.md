@@ -23,28 +23,29 @@ Skjárinn sýnir `LO` á meðan hitastigið er undir 100°c. Tækið gefur frá 
 
 **Bannað að brenna sig!**
 
-## Fatafilmur
+### Fatafilmur
 
-Almennt er hægt að miða við **160°c** fyrir fatafilmur, en farið eftir leiðbeiningum framleiðenda. 
+*Almennt er hægt að miða við **160°c** fyrir fatafilmur, en farið eftir leiðbeiningum framleiðenda.*
 
 Staðsetjið efnið á pressunni, gætið að því saumar og krumpur geta komið í veg fyrir að límingin heppnist.
 
 Gott er að hita fötin í 5-8 sekúndur áður en filman er sett á. 
 
-Gætið að því að snúa filmunni rétt. Bakhliðin (glansfilman) á að vísa upp að hitafletinum. 
+Gætið að því að snúa filmunni rétt. Bakhliðin (glansfilman) á að vísa upp að hitafletinum.
 
 Með ákveðinni hreyfingu, þrýstið niður þar til pressan læsist. Niðurtalning hefst um leið. 
 
-Þegar vélin pípir, opnið pressuna og fjarlægið plastfilmuna af sem fyrst, með jafnri samfelldri hreyfingu. 
+Þegar vélin pípir, opnið pressuna og fjarlægið plastfilmuna sem fyrst, með jafnri samfelldri hreyfingu. 
 
-Best er að fjarlægja filmuna á ská, þ.e.a.s. í 45°.
+Best er að fjarlægja filmuna á ská, þ.e. horn í horn. 
 
 ### Prentuð mynd (iColor litaprentari)
 
-Fyrir bómul, 200°c 15 sec 
-fyrir pólíester, 150°c 15c 
-
 Stillið hitastig eftir gerð fataefnis. 
+
+|   Bómullarefni    |   Pólýester efni  |
+|   ---             |   ---             |
+|   200°c & 15 sek  |   200°c & 15 sek  |
 
 Hitið botnplötu með því að loka hitapressunni tómri í 15 sekúndur. 
 
@@ -60,5 +61,6 @@ Opnið pressuna rólega svo pappírinn losni ekki frá.
 
 Fjarlægið bökunarpappír
 
-Teljið upp að 10 sek, grípið í horn bakhliðar og byrjið að toga hana af eftir 15 sek. Best er að toga í 45°c með jafnri, ákveðinni hreyfingu.
+Teljið upp að 10 sek, grípið í horn bakhliðar og byrjið að toga hana af eftir 15 sek með jafnri, ákveðinni hreyfingu. 
 
+Best er að fjarlægja bakhliðina á ská, þ.e. horn í horn.
