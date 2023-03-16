@@ -18,18 +18,25 @@ Að því loknu finnið þið skjalið ykkar með því að snúa hjólinu hægr
 
 Þá hitar prentarinn prentflötinn og stútinn og byrjar loks að prenta þegar réttu hitastigi er náð. 
 
+Gott er að fylgjast með fyrstu umferðunum og staðfesta að prentunin nái góðri festu. 
+
+### Prentun
+
 ### Hreinlæti
 
 Nauðsynlegt er að fjarlægja allar leyfar af prentfletinum áður en næsta prentun er sett af stað. 
 
 Einnig þarf að fituhreinsa flötinn, en það er gert með ísóprópanóli og strokið af með tusku. 
 
-### Byrjun á prenti
-
-Gott er að fylgjast með fyrstu umferðunum og staðfesta að prentunin nái góðri festu. 
-
 ## Að skipta um þráð
 
+Ýtið á svarta hnappinn til að fá upp valmyndina. 
 
+* Veldu `Unload filament`
+* Veldu viðeigandi efnisgerð (yfirleitt `PLA`)
 
-TODO
+Bíðið eftir að stúturinn nái settu hitastigi. Prentarinn gefur frá sér hljóðmerki þegar hitastigi er náð. 
+
+Fylgdu leiðbeiningum á skjánum. 
+
+**ATH:** Klippið 1-2 cm af endanum áður en gengið er frá honum. Sama á við við þráðinn sem settur er í, ef endinn er ósnyrtur þarf að klippa af honum áður hann er settur í. 
