@@ -39,5 +39,5 @@ Takkinn er neðarlega vinstra megin á vélinni.
 
 - Velja myndina í vinstri hluta forritsins
 
-- Ýtá prentarann með regnboga merkið (`Print job`)
+- Ýta á prentarann með regnboga merkið (`Print job`)
 

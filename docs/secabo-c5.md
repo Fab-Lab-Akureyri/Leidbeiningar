@@ -23,7 +23,7 @@ Skjárinn sýnir `LO` á meðan hitastigið er undir 100°c. Tækið gefur frá 
 
 **Bannað að brenna sig!**
 
-### Fatafilmur
+### Fatafilmur (Vínylskeri)
 
 *Almennt er hægt að miða við **160°c** fyrir fatafilmur, en farið eftir leiðbeiningum framleiðenda.*
 
@@ -47,19 +47,19 @@ Stillið hitastig eftir gerð fataefnis.
 |   ---             |   ---             |
 |   200°c & 15 sek  |   200°c & 15 sek  |
 
-Hitið botnplötu með því að loka hitapressunni tómri í 15 sekúndur. 
+Hitið botnplötu með því að loka hitapressunni tómri í 15 sekúndur.
 
-Staðsetið textílefnið í hitapressunni. 
+Staðsetjið textílefnið í hitapressunni. 
 
-Staðsetið prentuðu myndina ofan á efninu, látið myndina vísa niður að efninu. 
+Staðsetjið prentuðu myndina ofan á efninu, látið myndina vísa niður að efninu. 
 
 Leggið bökunarpappír yfir myndina, en það kemur í veg fyrir að bakhlið lyftist þegar pressan er opnuð. 
 
-Lokið pressunni þar til pressan gefur frá sér píp
+Lokið pressunni, bíðið þar til pressan gefur frá sér píp.
 
 Opnið pressuna rólega svo pappírinn losni ekki frá.
 
-Fjarlægið bökunarpappír
+Fjarlægið bökunarpappírinn. 
 
 Teljið upp að 10 sek, grípið í horn bakhliðar og byrjið að toga hana af eftir 15 sek með jafnri, ákveðinni hreyfingu. 
 
