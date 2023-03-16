@@ -8,34 +8,36 @@ Takkinn er neðarlega vinstra megin á vélinni.
 
 ## Gera prentverk
 
-- Kveikja á iColor PRORIP
+- Kveikja á iColor PRORIP forritinu
 
 - Velja `Uninet IColor 600 v2 Overprint`
 
 - Velja Open eða draga myndina inn á vinnusvæðið (v/m)
 
-- Forritið vinnur myndina og speglar hana sjálfkrafa. 
+- Forritið vinnur myndina og speglar hana sjálfkrafa.
 
-- Fyrir neðan myndina
-    - `Tabloid` í stærð
-    - Velja UNINET IColor 1 Step Light
-    - Input tray: Multi purpose
-    - Media type: Plain
-    - Media weight: Ultra heavy
+- Myndin birtist h/m í forritinu
+
+- Stillingar fyrir neðan mynd
+    - Velja `Queue` og `UNINET IColor 1 Step Light`
+    - *Fyrir A3:*     'Tabloid` í stærð fyrir A3 eða `Letter` fyrir A4
+    - *Input tray:*   **Multi purpose**
+    - *Media type:*   **Plain**
+    - *Media weight:* **Ultra heavy**
 
 ## Stilla prentara
 
-- Opna Multi purpose tray á framhlið prentarans
+- Opna `Multi purpose tray` á framhlið prentarans
 
 - Lyfta gráu hlífinni upp
 
-- Leggjum pappírinn með rúðunets hliðinni niður (hvíta hliðin upp)
+- Leggja pappírinn í bakkann, látið hvítu hliðina vísa upp og rúðunetið niður
 
-- Leggja gráu hlífina niður, en þá læsist pappírinn. 
+- Leggja gráu hlífina niður, en þá læsist pappírinn.
 
 ## Senda prentverk
 
 - Velja myndina í vinstri hluta forritsins
 
-- Ýtá regnboga prentara merkið (e. Print job)
+- Ýtá prentarann með regnboga merkið (`Print job`)
 
