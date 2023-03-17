@@ -18,4 +18,4 @@ Sjá nánar að neðan
 
 - Límmiðafilma: Skera í framhliðina
 
-- Fatafimla: Skera í bakhlið
+- Fatafilma: Skera í bakhlið
