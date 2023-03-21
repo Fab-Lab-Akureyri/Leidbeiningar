@@ -19,3 +19,5 @@ Sjá nánar að neðan
 - Límmiðafilma: Skera í framhliðina
 
 - Fatafilma: Skera í bakhlið
+
+**Muna að taka til eftir sig!**
