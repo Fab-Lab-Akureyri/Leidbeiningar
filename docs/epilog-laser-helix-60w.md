@@ -1,11 +1,10 @@
 # Laserskurðarvél 60W
 
-## TODO Uppfæra gildi!
-
 |                   |   300 DPI Raster<br>Speed / Power | 400 DPI Raster<br>Speed / Power  | 600 DPI Raster <br>Speed / Power | Vector Cutting <br>Speed / Power / Frequency
 |   ---             |   ---         |   ---             |   ---             |   ---
-|   Viður / MDF     |   60 / 100    |   80 / 100        |   100 / 100       |   <b>4 mm</b> - 30 / 60 / 500<br><b>6 mm</b> - 14 / 100 / 500<br><b>9 mm</b> - 10 / 100 / 500
-|   Akrýl           |   100 / 50    |   100 / 40        |   100 / 30        |   <b>4 mm</b> - 20 / 100 / 5000<br><b>6 mm</b> - 12 / 100 / 5000<br><b>9 mm</b> - 6 / 100 / 5000
+|   Krossviður      |   60 / 100    |   80 / 100        |   100 / 100       |   <b>3 mm</b> - 26 / 100 / 500<br><b>6 mm</b> - 16 / 100 / 500<br>
+|   MDF             |   60 / 100    |   80 / 100        |   100 / 100       |   <b>4 mm</b> - 14 / 100 / 500<br><b>6 mm</b> - 12 / 100 / 500<br><b>9 mm</b> - 12 / 100 / 500 (2x)
+|   Akrýl           |   100 / 50    |   100 / 40        |   100 / 30        |   <b>4 mm</b> - 18 / 100 / 5000<br><b>6 mm</b> - 14 / 100 / 5000<br>
 |   AlumaMark       |   100 / 30    |   100 / 25        |   100 / 20        |   N/A
 |   Húðað ál        |   100 / 55    |   100 / 45        |   100 / 35        |   N/A
 |   Gler            |   40 / 100    |   50 / 100        |   60 / 100        |   N/A
