@@ -17,7 +17,7 @@ Kveikt er á vélinni með rauða rofanum vinstra megin.
 
 ## Hitastig
 
-Skjárinn sýnir `LO` á meðan hitastigið er undir 100°c. Tækið gefur frá sér *PÍP* þegar kjörstigahiti er náð. 
+Skjárinn sýnir `LO` á meðan hitastigið er undir 100°c. Tækið gefur frá sér *PÍP* þegar óskgildi er náð. 
 
 ## Notkun
 
