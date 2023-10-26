@@ -9,7 +9,7 @@ Kveikt er á vélinni með rauða rofanum vinstra megin.
 |   Skjár       |   LED     |   Veldu       |   Skýring
 |   ---         |   ---     |   ---         |   ---
 | `OFF`         |           | `OK`          |   Til að byrja
-| `-C-`/`-F-`   |           | `-C-` og `OK` |   Selsíus vs farenheit
+| `-C-`/`-F-`   |           | `-C-` og `OK` |   Selsíus / farenheit
 | `160°`        |   `Temp`  | `↑/↓` og `OK` |   Hitastig
 | `15`          |   `Time`  | `↑/↓` og `OK` |   Niðurtalning
 | `LO`          |           |               |   (Low) `LO` á meðan pressan hitnar
