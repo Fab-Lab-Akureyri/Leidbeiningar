@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       #- run: ls ${{ github.workspace }}
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: JesseTG/rm@v1.0.3
         with: 
           path: pdfs
