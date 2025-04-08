@@ -25,7 +25,7 @@ Ef þú vilt svo færa línur fram og til baka til að eyjurnar tengist, getur �
 
 Best er að hafa sem flestar eyjar tengdar.
 
-Svo ýtir þú á plot og plottar skjalið sem **SVG**.
+Svo ýtir þú á **Plot** og plottar skjalið sem **SVG**.
 
 #### Inkscape
 
