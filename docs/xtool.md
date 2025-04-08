@@ -9,19 +9,19 @@
 
 ### Leiðbeiningar á íslensku:
 
-    Höfundar: Jóhann Ernir og Kristján Örn - nemendur í rafeindavirkjun
+    Höfundar: Jóhann Ernir og Kristján Örn - nemendur í rafeindavirkjun 2025
 
 #### Kicad
 
-Eftir að hafa teiknað rásina þína í [KiCAD](http://kicad.org/), þá viltu bæta við **polygons**. ![polygons](../img/xtool/image-000.png)
+Eftir að hafa teiknað rásina þína í [KiCAD](http://kicad.org/), þá viltu bæta við **polygons**. ![polygons](images/xtool/image-000.png)
 
-Með því velur þú þessa valkosti:​ (eftir að ýta á OK þarftu að ýta á B takkann á lyklaborðinu) ![KiCad](../img/xtool/image-002.png)
+Með því velur þú þessa valkosti:​ (eftir að ýta á OK þarftu að ýta á B takkann á lyklaborðinu) ![KiCad](images/xtool/image-002.png)
 
 Þá ætti platan þín að líta eitthvað svona út:
 
-![Plata](../img/xtool/image-003.png)
+![Plata](images/xtool/image-003.png)
 
-Ef þú vilt svo færa línur fram og til baka til að eyjurnar tengist, getur þú gert það. Til að upppfæra ýtir þú á **plot** takkann. ![Plot](../img/xtool/image-001.png) og þá getur þú uppfært útlitið.
+Ef þú vilt svo færa línur fram og til baka til að eyjurnar tengist, getur þú gert það. Til að upppfæra ýtir þú á **plot** takkann. ![Plot](images/xtool/image-001.png) og þá getur þú uppfært útlitið.
 
 Best er að hafa sem flestar eyjar tengdar.
 
@@ -37,7 +37,7 @@ Fyrsta sem þú gerir er að ýta á **File** og svo **Import**, velur svo skjal
 
 2. Velja allt á skjánum með **CTRL + A** og fer í Path og geria **Object to path** og **stroke to path**. Gott er að gera bæði nokkrum sinnum, bara til öryggis.
 
-3. Eftir það velur þú **Node** tólið ![Node](../img/xtool/image-004.png) og dregur yfir alla punktana þannig að þeir verða bláir. 
+3. Eftir það velur þú **Node** tólið ![Node](images/xtool/image-004.png) og dregur yfir alla punktana þannig að þeir verða bláir. 
 
 4. Velur svo **Path**, velur **Union**. 
 
@@ -47,11 +47,11 @@ Fyrsta sem þú gerir er að ýta á **File** og svo **Import**, velur svo skjal
 
 ##### Allir ystu punktar valdir​
 
-![Punktar](../img/xtool/image-005.png)
+![Punktar](images/xtool/image-005.png)
 
 ##### Eftir að hafa eytt þeim​
 
-![Eyða](../img/xtool/image-006.png)
+![Eyða](images/xtool/image-006.png)
 
 #### Athugið:
 
@@ -69,22 +69,22 @@ Annaðhvort er hægt að bora götin handvikt eða nota CNC fræs. Fræsinn er m
 
 Þá plottar þú út skjalið sem **Gerber** með eftirfarandi stillingum:
 
-![Gerber](../img/xtool/image-007.png)
+![Gerber](images/xtool/image-007.png)
 
 Og svo ýtir þú á **Generate drill files** og notar þessar stillingar:
 
-![Gerber](../img/xtool/image-008.png)
+![Gerber](images/xtool/image-008.png)
 
 #### Carbide copper (fyrir holur)
 
 Síðan opnar þú heimasíðuna [Carbide copper](https://carbide3d.com/copper/) og fylgir þessum leiðbeningum
 
-![Carbide](../img/xtool/image-009.png)
+![Carbide](images/xtool/image-009.png)
 
 Fyrst velur þú **B.cu** skjalið og síðan **drill file** skjalið. **Edge cuts** skipta ekki máli í þessu. Á endanum velur þú: **Export as separate G Codes**
 
-![Carbide](../img/xtool/image-010.png)
-![Carbide](../img/xtool/image-011.png)
+![Carbide](images/xtool/image-010.png)
+![Carbide](images/xtool/image-011.png)
 
 Síðan borar þú út gotin með fræsinum og færir plötuna yfir í laser skurðarvélina.
 
@@ -95,15 +95,15 @@ Góðar ábendingar:
 
 #### Laser vél
 
-Fyrst staðsetur þú plötu þína í vélinni og ýtir svo á ​![Myndavel](../img/xtool/image-013.png) í xTool forritinu. Eftir það ætti að koma mynd af plötunni þinni í forritinu. 
+Fyrst staðsetur þú plötu þína í vélinni og ýtir svo á ​![Myndavel](images/xtool/image-013.png) í xTool forritinu. Eftir það ætti að koma mynd af plötunni þinni í forritinu. 
 
-Síðan ýtir þú á ![Mynd](../img/xtool/image-012.png) og velur SVG skjalið sem þú varst að búa til úr **Inkscape**. Mikilvægt er að staðsetja teikninguna rétt yfir holunum. 
+Síðan ýtir þú á ![Mynd](images/xtool/image-012.png) og velur SVG skjalið sem þú varst að búa til úr **Inkscape**. Mikilvægt er að staðsetja teikninguna rétt yfir holunum. 
 
 Því miður er ekki hægt að treysta myndavélinni alveg og þarf því að taka eina umferð til að staðsetja plötuna rétt.
 
 Stillingarnar sem eru notaðar eru þessar:
 
-![xTool](../img/xtool/image-014.png)
+![xTool](images/xtool/image-014.png)
 
 Passa að hafa **Fiber IR** valið
 
