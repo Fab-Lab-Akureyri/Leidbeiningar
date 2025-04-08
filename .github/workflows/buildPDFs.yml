@@ -34,7 +34,7 @@ jobs:
           build_pdf: true
           build_html: false
           table_of_contents: false
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: docs
           path: pdfs
