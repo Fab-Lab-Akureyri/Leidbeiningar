@@ -13,11 +13,11 @@
 
 #### Kicad
 
-Eftir að hafa teiknað rásina þína í [KiCAD](http://kicad.org/), þá viltu bæta við **polygons**. ![polygons](images/xtool/image-000.png)
+Eftir að hafa teiknað rásina þína í [KiCAD](http://kicad.org/), þá viltu bæta við **polygons**. ![polygons](./images/xtool/image-000.png)
 
 Með því velur þú þessa valkosti:​ (eftir að ýta á OK þarftu að ýta á B takkann á lyklaborðinu) ![KiCad](images/xtool/image-002.png)
 
-Þá ætti platan þín að líta eitthvað svona út:
+Þá ætti platan þín að líta svona út:
 
 ![Plata](images/xtool/image-003.png)
 
