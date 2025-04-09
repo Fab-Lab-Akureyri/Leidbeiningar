@@ -20,9 +20,9 @@ jobs:
       - uses: JesseTG/rm@v1.0.3
         with: 
           path: pdfs
-      #- uses: stefanzweifel/git-auto-commit-action@v4
-      #  with:
-      #    commit_message: Remove pdfs before renewing them
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Remove pdfs before renewing them
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: docs
@@ -38,14 +38,9 @@ jobs:
         with:
           name: docs
           path: pdfs
-      - run: ls ${{ github.workspace }}/pdfs
+      #- run: ls ${{ github.workspace }}/pdfs
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Updated pdfs'
           add: 'pdfs/*.pdf --force'
-          pull: true
-      #- uses: EndBug/add-and-commit@v9
-      #  with:
-      #    message: 'Updated pdfs'
-      #    add: 'pdfs/*.pdf --force'
 #          cwd: './pathToRepo/'
