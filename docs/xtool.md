@@ -12,6 +12,8 @@
 
 ## Rafrásagerð
 
+![Fab Academy](./images/xtool/galvo.jpg)
+
 ### Hlekkir: 
 
 - 1: [mikeysklar](https://github.com/mikeysklar/cnc-fiber-laser-pcb)
