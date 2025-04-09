@@ -20,6 +20,7 @@ Stranglega bannað er að nota tækið með hlífina opna!
 ### Leiðbeiningar á íslensku:
 
     Höfundar: Jóhann Ernir og Kristján Örn - nemendur í rafeindavirkjun 2025
+    Uppfært: Árni Björnsson
 
 #### Kicad
 
