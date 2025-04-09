@@ -12,7 +12,7 @@
 
 ## Rafrásagerð
 
-![Fab Academy](./images/xtool/galvo.jpg)
+![Fab Academy](images/xtool/galvo.jpg)
 
 ### Hlekkir: 
 
