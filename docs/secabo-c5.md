@@ -38,29 +38,3 @@ Með ákveðinni hreyfingu, þrýstið niður þar til pressan læsist. Niðurta
 Þegar vélin pípir, opnið pressuna og fjarlægið plastfilmuna sem fyrst, með jafnri samfelldri hreyfingu. 
 
 Best er að fjarlægja filmuna á ská, þ.e. horn í horn. 
-
-### Prentuð mynd (iColor litaprentari)
-
-Stillið hitastig eftir gerð fataefnis. 
-
-|   Bómullarefni    |   Pólýester efni  |
-|   ---             |   ---             |
-|   200°c & 15 sek  |   200°c & 15 sek  |
-
-Hitið botnplötu með því að loka hitapressunni tómri í 15 sekúndur.
-
-Staðsetjið textílefnið í hitapressunni. 
-
-Staðsetjið prentuðu myndina ofan á efninu, látið myndina vísa niður að efninu. 
-
-Leggið bökunarpappír yfir myndina, en það kemur í veg fyrir að bakhlið lyftist þegar pressan er opnuð. 
-
-Lokið pressunni, bíðið þar til pressan gefur frá sér píp.
-
-Opnið pressuna rólega svo pappírinn losni ekki frá.
-
-Fjarlægið bökunarpappírinn. 
-
-Teljið upp að 10 sek, grípið í horn bakhliðar og byrjið að toga hana af eftir 15 sek með jafnri, ákveðinni hreyfingu. 
-
-Best er að fjarlægja bakhliðina á ská, þ.e. horn í horn.
