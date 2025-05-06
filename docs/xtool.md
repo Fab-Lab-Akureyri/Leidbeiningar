@@ -12,12 +12,40 @@
 
 ## Rafrásagerð
 
+## Ath: Skjal í vinnslu
+
 ![Fab Academy](images/xtool/galvo.jpg)
 
 ### Hlekkir: 
 
 - 1: [mikeysklar](https://github.com/mikeysklar/cnc-fiber-laser-pcb)
 - 2: [sphawes](https://github.com/sphawes/fiber-laser-pcb-fab)
+
+### Styttri skref
+
+#### KiCad 
+
+Plot -> Velja SVG -> Haka við "Negative plot"
+
+**Vera með Edge cut stærð á hreinu!**
+
+Opna SVG í Inkscape -> Select all -> Ungroup nokkrum sinnum
+Gera kassa í sömu stærð og útlína brettis
+Staðsetja kassan, velja kassa og ysta kassa teikningarinnar og velja ctrl + *
+Sem er það sama og Path -> Intersection
+
+Xtool stillingar:
+
+FIBER IR
+Power 100%
+Speed 700
+Passes 10
+Lines per cm: 140
+Bi-directional
+Incremental
+Cross-hatch
+
+Autofocus + 1.5mm (Handvirkt, á stjórnborðinu, ekki stimpla inn í forritið)
 
 ### Leiðbeiningar á íslensku:
 
