@@ -25,27 +25,26 @@
 
 #### KiCad 
 
-Plot -> Velja SVG -> Haka við "Negative plot"
+- Kicad -> plot -> svg -> Negative plot
 
-**Vera með Edge cut stærð á hreinu!**
+#### Inkscaep
 
-Opna SVG í Inkscape -> Select all -> Ungroup nokkrum sinnum
-Gera kassa í sömu stærð og útlína brettis
-Staðsetja kassan, velja kassa og ysta kassa teikningarinnar og velja ctrl + *
-Sem er það sama og Path -> Intersection
+- Inkscape -> Select all -> ungroup oft. 
+- Velja allt hvíta og gera "Stroke to path"
+- Með allt hvíta valið, gera ctrl + "+" (Path -> Union)
+- Aðlaga stærðina á svarta bakgrunninn, velja allt og gera ctrl + "-" (Path -> Difference)
 
 Xtool stillingar:
 
-FIBER IR
-Power 100%
-Speed 700
-Passes 10
-Lines per cm: 140
-Bi-directional
-Incremental
-Cross-hatch
-
-Autofocus + 1.5mm (Handvirkt, á stjórnborðinu, ekki stimpla inn í forritið)
+- FIBER IR
+- Power 100%
+- Speed 700
+- Passes 10
+- Lines per cm: 140
+- Bi-directional
+- Incremental
+- Cross-hatch
+- Autofocus + 1.5mm (Handvirkt, á stjórnborðinu, ekki stimpla inn í forritið)
 
 ### Leiðbeiningar á íslensku:
 
