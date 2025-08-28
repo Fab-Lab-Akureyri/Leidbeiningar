@@ -1,4 +1,4 @@
-# Kaffivél
+# DeLonghi - Kaffivél
 
 Á vélinni eru **6 takkar**, eitt **snúningshjól** til að stilla styrk kaffis og einn **skjár** sem sýnir stöðu vélarinnar. Hér er leiðbeining um hvern takka og hjólið.
 
