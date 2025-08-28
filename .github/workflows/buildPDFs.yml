@@ -73,7 +73,7 @@ jobs:
             out="pdfs/${base}.pdf"
             if [ ! -f "$out" ]; then
               echo "Fallback converting: $md -> $out"
-              md-to-pdf "$md" --dest "$out"
+              md-to-pdf "$md" -o "$out"         # <-- fix: use -o/--output
             fi
           done
 
@@ -81,6 +81,7 @@ jobs:
         run: |
           echo "PDFs after fallback:"
           ls -la pdfs || true
+
 
       # Prepare Python for QR generation
       - uses: actions/setup-python@v5
