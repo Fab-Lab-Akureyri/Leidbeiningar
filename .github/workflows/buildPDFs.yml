@@ -1,46 +1,91 @@
 # .github/workflows/buildPDFs.yml
-
 name: Docs to PDF
-# This workflow is triggered on pushes within the docs folder
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
       - 'docs/**.md'
       - 'docs/images/**'
 
 jobs:
   converttopdf:
-    name: Build PDF
+    name: Build PDF + QR codes
     runs-on: ubuntu-latest
     steps:
-      #- run: ls ${{ github.workspace }}
       - uses: actions/checkout@v4
+
+      # Clean the output folders so we don't keep stale files
       - uses: JesseTG/rm@v1.0.3
-        with: 
-          path: pdfs
+        with:
+          path: |
+            pdfs
+            qr-codes
+
+      # Commit the cleanup (optional, but mirrors your current behavior)
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Remove pdfs before renewing them
+          commit_message: Remove old pdfs and qr-codes before renewing them
+
+      # Build PDFs from docs
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: docs
           output_dir: pdfs
           images_dir: docs/images/
-          # for example <img src="./images/file-name.png">
           image_import: images
-          # Default is true, can set to false to only get PDF files
           build_pdf: true
           build_html: false
           table_of_contents: false
+
+      # Generate QR codes that point to the *raw* PDF URLs
+      - name: Generate QR codes
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install QR dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "qrcode[pil]"
+      - name: Create QR PNGs for each PDF
+        env:
+          REPOSITORY: ${{ github.repository }}  # e.g. Fab-Lab-Akureyri/Leidbeiningar
+          BRANCH: ${{ github.ref_name }}        # e.g. main
+        run: |
+          python - <<'PY'
+          import os, glob, pathlib, urllib.parse, qrcode
+          pdf_dir = pathlib.Path("pdfs")
+          out_dir = pathlib.Path("qr-codes")
+          out_dir.mkdir(parents=True, exist_ok=True)
+
+          repo = os.environ["REPOSITORY"]              # owner/repo
+          branch = os.environ.get("BRANCH", "main")    # branch or tag
+
+          for pdf_path in pdf_dir.glob("*.pdf"):
+              # Construct the raw URL, URL-encoding the filename for safety
+              filename = pdf_path.name
+              encoded = urllib.parse.quote(filename)
+              raw_url = f"https://raw.githubusercontent.com/{repo}/{branch}/pdfs/{encoded}"
+
+              img = qrcode.make(raw_url)
+              png_name = pdf_path.with_suffix(".png").name
+              img.save(out_dir / png_name)
+
+              print(f"Created QR for {filename} -> qr-codes/{png_name}")
+          PY
+
+      # Upload artifacts from the run (optional but handy)
       - uses: actions/upload-artifact@v4
         with:
-          name: docs
-          path: pdfs
-      #- run: ls ${{ github.workspace }}/pdfs
+          name: docs-and-qrs
+          path: |
+            pdfs
+            qr-codes
+
+      # Commit PDFs and QR codes back to the repo
       - uses: EndBug/add-and-commit@v9
         with:
-          message: 'Updated pdfs'
-          add: 'pdfs/*.pdf --force'
-#          cwd: './pathToRepo/'
+          message: 'Updated pdfs and QR codes'
+          add: |
+            pdfs/*.pdf --force
+            qr-codes/*.png --force
