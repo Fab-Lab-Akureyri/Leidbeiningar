@@ -1,4 +1,4 @@
-# [xTool F1 Ultra](https://www.xtool.com/products/xtool-f1-ultra-20w-fiber-diode-dual-laser-engraver)
+# xTool F1 Ultra - Laser
 
 **Stranglega bannað er að nota tækið með hlífina opna!**
 

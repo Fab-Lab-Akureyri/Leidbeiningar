@@ -1,4 +1,4 @@
-# [Prusa MK3S+](https://www.prusa3d.com/category/original-prusa-i3-mk3s/)
+# Prusa MK3S+
 
 ## Að kveikja
 

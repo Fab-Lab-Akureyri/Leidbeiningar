@@ -1,4 +1,4 @@
-# [Wegstr](https://wegstr.com/) CNC fræsivél
+# Wegstr - CNC fræsivél
 
 ## Að kveikja
 
