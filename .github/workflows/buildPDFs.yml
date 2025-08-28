@@ -57,30 +57,32 @@ jobs:
           echo "PDFs generated:"
           ls -la pdfs || true
 
-      # Fallback: ensure every .md has a .pdf (covers files skipped by the first action)
-      - name: Setup Node for fallback converter
+      # Convert Markdown -> PDF using md-to-pdf
+      - name: Convert Markdown to PDFs
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Convert any missing PDFs (fallback with md-to-pdf)
-        run: |
+      - run: |
           npm i -g md-to-pdf
           shopt -s globstar
           mkdir -p pdfs
           for md in docs/**/*.md; do
-            base="$(basename "$md" .md)"
-            out="pdfs/${base}.pdf"
-            if [ ! -f "$out" ]; then
-              echo "Fallback converting: $md -> $out"
-              md-to-pdf "$md" -o "$out"         # <-- fix: use -o/--output
+            echo "Converting: $md"
+            md-to-pdf "$md"              # writes docs/<name>.pdf by default
+            src_pdf="${md%.md}.pdf"
+            if [ -f "$src_pdf" ]; then
+              mv "$src_pdf" "pdfs/$(basename "$src_pdf")"
+            else
+              echo "No PDF produced for $md" >&2
             fi
           done
 
-      - name: Debug - list PDFs after fallback
+      # Debug: list PDFs
+      - name: Debug - list PDFs
         run: |
-          echo "PDFs after fallback:"
+          echo "PDFs generated:"
           ls -la pdfs || true
+
 
 
       # Prepare Python for QR generation
