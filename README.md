@@ -2,7 +2,7 @@
 
 Tökum höndum saman að efla íslensku í [tækniumhverfinu](https://www.visir.is/g/20232389579d/is-lenskt-mal-taekni-fyrir-taeki-i-sam-starfi-vid-openai-um-gpt-4)!
 
-Hér er í vinnslu leiðbeiningar fyrir þau tæki og tól sem til staðar eru í Fab Lab Akureyri.
+Hér eru í vinnslu leiðbeiningar fyrir þau tæki og tól sem til staðar eru í Fab Lab Akureyri.
 
 Leiðbeiningarnar koma vonandi starfsfólki og gestum smiðjunnar, sem og annara smiðja, til góðra nota.
 

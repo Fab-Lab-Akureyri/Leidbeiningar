@@ -8,6 +8,9 @@ on:
       - 'docs/**.md'
       - 'docs/images/**'
 
+permissions:
+  contents: write  # required for committing changes
+
 jobs:
   converttopdf:
     name: Build PDF + QR codes
@@ -15,19 +18,19 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Clean the output folders so we don't keep stale files
+      # Clean output folders so we don't keep stale files
       - uses: JesseTG/rm@v1.0.3
         with:
           path: |
             pdfs
             qr-codes
 
-      # Commit the cleanup (optional, but mirrors your current behavior)
+      # Commit the cleanup (optional; mirrors your current behavior)
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Remove old pdfs and qr-codes before renewing them
 
-      # Build PDFs from docs
+      # Build PDFs from docs/
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_path: docs
@@ -38,40 +41,114 @@ jobs:
           build_html: false
           table_of_contents: false
 
-      # Generate QR codes that point to the *raw* PDF URLs
-      - name: Generate QR codes
+      # Prepare environment for QR generation with overlays
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install QR dependencies
+
+      - name: Install dependencies (qrcode + PIL) and font
         run: |
           python -m pip install --upgrade pip
           pip install "qrcode[pil]"
-      - name: Create QR PNGs for each PDF
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core
+
+      # Generate QR PNGs for each PDF, labeled with the first H1 from its source .md
+      - name: Create QR PNGs with H1 overlay
         env:
-          REPOSITORY: ${{ github.repository }}  # e.g. Fab-Lab-Akureyri/Leidbeiningar
-          BRANCH: ${{ github.ref_name }}        # e.g. main
+          REPOSITORY: ${{ github.repository }}  # e.g., Fab-Lab-Akureyri/Leidbeiningar
+          BRANCH: ${{ github.ref_name }}        # e.g., main
         run: |
           python - <<'PY'
-          import os, glob, pathlib, urllib.parse, qrcode
-          pdf_dir = pathlib.Path("pdfs")
-          out_dir = pathlib.Path("qr-codes")
+          import os, pathlib, urllib.parse, re
+          import qrcode
+          from PIL import Image, ImageDraw, ImageFont
+
+          pdf_dir  = pathlib.Path("pdfs")
+          docs_dir = pathlib.Path("docs")
+          out_dir  = pathlib.Path("qr-codes")
           out_dir.mkdir(parents=True, exist_ok=True)
 
-          repo = os.environ["REPOSITORY"]              # owner/repo
-          branch = os.environ.get("BRANCH", "main")    # branch or tag
+          repo   = os.environ["REPOSITORY"]              # owner/repo
+          branch = os.environ.get("BRANCH", "main")      # branch or tag
 
-          for pdf_path in pdf_dir.glob("*.pdf"):
-              # Construct the raw URL, URL-encoding the filename for safety
-              filename = pdf_path.name
-              encoded = urllib.parse.quote(filename)
-              raw_url = f"https://raw.githubusercontent.com/{repo}/{branch}/pdfs/{encoded}"
+          # Load a Unicode-capable font (Icelandic chars) with sane fallback
+          font_path_candidates = [
+              "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+              "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf",
+          ]
+          font = None
+          for fp in font_path_candidates:
+              if pathlib.Path(fp).exists():
+                  try:
+                      font = ImageFont.truetype(fp, 28)  # adjust size as needed
+                      break
+                  except Exception:
+                      pass
+          if font is None:
+              font = ImageFont.load_default()
 
-              img = qrcode.make(raw_url)
-              png_name = pdf_path.with_suffix(".png").name
-              img.save(out_dir / png_name)
+          def get_h1_title(md_file: pathlib.Path) -> str:
+              """Extract the first H1 (# Heading) from a markdown file; fallback to filename stem."""
+              try:
+                  with md_file.open(encoding="utf-8") as f:
+                      for line in f:
+                          m = re.match(r'^\s*#\s+(.*)', line)
+                          if m:
+                              return m.group(1).strip()
+              except Exception:
+                  pass
+              return md_file.stem
 
-              print(f"Created QR for {filename} -> qr-codes/{png_name}")
+          for pdf_path in sorted(pdf_dir.glob("*.pdf")):
+              base = pdf_path.stem
+              md_file = docs_dir / f"{base}.md"
+              heading = get_h1_title(md_file) if md_file.exists() else base
+
+              # Construct the raw URL; URL-encode the filename for safety
+              encoded_filename = urllib.parse.quote(pdf_path.name)
+              raw_url = f"https://raw.githubusercontent.com/{repo}/{branch}/pdfs/{encoded_filename}"
+
+              # Create the QR with decent error correction (good for small overlays if added later)
+              qr = qrcode.QRCode(
+                  error_correction=qrcode.constants.ERROR_CORRECT_Q,
+                  box_size=10,
+                  border=4
+              )
+              qr.add_data(raw_url)
+              qr.make(fit=True)
+              img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
+
+              # Measure text and build a new canvas with space for the label
+              draw = ImageDraw.Draw(img)
+              # For modern Pillow, use textbbox for better accuracy; fallback to textsize
+              try:
+                  bbox = draw.textbbox((0,0), heading, font=font)
+                  text_w, text_h = bbox[2]-bbox[0], bbox[3]-bbox[1]
+              except Exception:
+                  text_w, text_h = draw.textsize(heading, font=font)
+
+              padding_top = 6
+              padding_bottom = 12
+              margin_side = 16
+              new_w = max(img.width, text_w + 2*margin_side)
+              new_h = img.height + padding_top + text_h + padding_bottom
+
+              new_img = Image.new("RGB", (new_w, new_h), "white")
+              # Center QR horizontally
+              qr_x = (new_w - img.width) // 2
+              new_img.paste(img, (qr_x, 0))
+
+              # Draw centered text below QR
+              draw = ImageDraw.Draw(new_img)
+              text_x = (new_w - text_w) // 2
+              text_y = img.height + padding_top
+              draw.text((text_x, text_y), heading, fill="black", font=font)
+
+              out_path = out_dir / f"{base}.png"
+              new_img.save(out_path)
+              print(f"Created: {out_path}  (URL: {raw_url})")
           PY
 
       # Upload artifacts from the run (optional but handy)
@@ -82,7 +159,7 @@ jobs:
             pdfs
             qr-codes
 
-      # Commit PDFs and QR codes back to the repo
+      # Commit PDFs and QR codes back to repo
       - uses: EndBug/add-and-commit@v9
         with:
           message: 'Updated pdfs and QR codes'
