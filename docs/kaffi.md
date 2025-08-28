@@ -31,3 +31,15 @@ Snúningshjólið í miðjunni stillir styrk kaffisins:
 - **Daglega:** Tæmdu kaffimölskúffuna og fylltu á vatnstankinn.
 - **Vikulega:** Þrífðu dropabakka og gufutúðuna.
 - **Reglulega:** Keyrðu hreinsiferli þegar vélin biður um það.
+
+## Hvernig á að búa til kaffi   
+1. Kveiktu á vélinni með **OnOFf** takkanum.
+2. Bíddu þar til skjárinn sýnir að vélin sé tilbúin.
+3. Veldu tegund kaffis með því að ýta á viðeigandi bollatakka.
+4. Stilltu styrk kaffisins með snúningshjólinu.
+5. Settu bollann undir kaffitúbuna.
+6. Ýttu á bollatakkann aftur til að hefja kaffigerð.
+7. Þegar kaffið er tilbúið, fjarlægðu bollann og njóttu!
+8. Til að nota gufutúðuna, ýttu á **Gufa** takkann og fylgdu leiðbeiningum á skjánum.
+9. Þegar vélin er ekki í notkun, slökktu á henni með **OnOFf** takkanum.
+10. Fylgdu viðhaldsháttum til að tryggja langan líftíma vélarinnar.

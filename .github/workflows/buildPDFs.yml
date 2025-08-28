@@ -1,74 +1,52 @@
-# .github/workflows/buildPDFs.yml
 name: Docs to PDF
 
 on:
   push:
     branches: [ main ]
     paths:
-      - 'docs/**/*.md'       # <-- fix: match md in subfolders too
+      - 'docs/**/*.md'
       - 'docs/images/**'
+  workflow_dispatch:  # allows manual triggering from the Actions tab
 
 permissions:
   contents: write
 
 jobs:
-  converttopdf:
-    name: Build PDF + QR codes
+  build:
+    name: Build PDFs + QR Codes
     runs-on: ubuntu-latest
+
     steps:
+      # Checkout repo
       - uses: actions/checkout@v4
 
-      # Debug: show changed files and repo tree
-      - name: Debug - show repo status
+      # Debug: show repo state
+      - name: Debug - list docs folder
         run: |
-          echo "Changed files in this push:"
-          git diff --name-only HEAD~1 || true
           echo "Docs folder content:"
           ls -laR docs || true
 
-      # Clean outputs
+      # Clean output folders
       - uses: JesseTG/rm@v1.0.3
         with:
           path: |
             pdfs
             qr-codes
 
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Remove old pdfs and qr-codes before renewing them
-
-      # Ensure output dir exists (some actions expect it)
-      - run: mkdir -p pdfs
-
-      # Convert Markdown -> PDF
-      - uses: baileyjm02/markdown-to-pdf@v1
-        with:
-          input_path: docs
-          output_dir: pdfs
-          images_dir: docs/images/
-          image_import: images
-          build_pdf: true
-          build_html: false
-          table_of_contents: false
-
-      # Debug: show produced PDFs
-      - name: Debug - list PDFs
-        run: |
-          echo "PDFs generated:"
-          ls -la pdfs || true
-
-      # Convert Markdown -> PDF using md-to-pdf
-      - name: Convert Markdown to PDFs
+      # Node setup and md-to-pdf
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: |
-          npm i -g md-to-pdf
+
+      - name: Convert Markdown to PDFs (with no-sandbox)
+        run: |
+          npm i -g md-to-pdf@latest
           shopt -s globstar
           mkdir -p pdfs
           for md in docs/**/*.md; do
             echo "Converting: $md"
-            md-to-pdf "$md"              # writes docs/<name>.pdf by default
+            md-to-pdf "$md" --launch-options '{"args":["--no-sandbox"]}'
             src_pdf="${md%.md}.pdf"
             if [ -f "$src_pdf" ]; then
               mv "$src_pdf" "pdfs/$(basename "$src_pdf")"
@@ -77,28 +55,26 @@ jobs:
             fi
           done
 
-      # Debug: list PDFs
+      # Debug: show generated PDFs
       - name: Debug - list PDFs
         run: |
           echo "PDFs generated:"
           ls -la pdfs || true
 
-
-
-      # Prepare Python for QR generation
+      # Python setup for QR generation
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies (qrcode + PIL) and font
+      - name: Install dependencies for QR codes
         run: |
           python -m pip install --upgrade pip
           pip install "qrcode[pil]"
           sudo apt-get update
           sudo apt-get install -y fonts-dejavu-core
 
-      # Make QR PNGs (label = first H1 from matching .md)
-      - name: Create QR PNGs with H1 overlay
+      # Generate QR codes with headings
+      - name: Generate QR codes with H1 overlay
         env:
           REPOSITORY: ${{ github.repository }}
           BRANCH: ${{ github.ref_name }}
@@ -116,85 +92,66 @@ jobs:
           repo   = os.environ["REPOSITORY"]
           branch = os.environ.get("BRANCH", "main")
 
-          # Font that supports Icelandic
+          # Load a font with Icelandic support
           font = None
           for fp in ("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
                      "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf"):
-              p = pathlib.Path(fp)
-              if p.exists():
-                  try:
-                      font = ImageFont.truetype(fp, 28)
-                      break
-                  except Exception:
-                      pass
+              if pathlib.Path(fp).exists():
+                  font = ImageFont.truetype(fp, 28)
+                  break
           if font is None:
               font = ImageFont.load_default()
 
-          def get_h1_title(md_file: pathlib.Path) -> str:
+          def get_h1(md_file: pathlib.Path) -> str:
               try:
                   with md_file.open(encoding="utf-8") as f:
                       for line in f:
-                          m = re.match(r'^\s*#\s+(.*)', line)
-                          if m:
-                              return m.group(1).strip()
+                          match = re.match(r'^\s*#\s+(.*)', line)
+                          if match:
+                              return match.group(1).strip()
               except Exception:
                   pass
               return md_file.stem
 
-          found = False
           for pdf_path in sorted(pdf_dir.glob("*.pdf")):
-              found = True
               base = pdf_path.stem
-
-              # Look for matching .md anywhere under docs/
               candidates = list(docs_dir.rglob(f"{base}.md"))
-              md_file = candidates[0] if candidates else None
-              heading = get_h1_title(md_file) if md_file else base
+              heading = get_h1(candidates[0]) if candidates else base
 
-              encoded_filename = urllib.parse.quote(pdf_path.name)
-              raw_url = f"https://raw.githubusercontent.com/{repo}/{branch}/pdfs/{encoded_filename}"
-
-              qr = qrcode.QRCode(
-                  error_correction=qrcode.constants.ERROR_CORRECT_Q,
-                  box_size=10,
-                  border=4
-              )
+              raw_url = f"https://raw.githubusercontent.com/{repo}/{branch}/pdfs/{urllib.parse.quote(pdf_path.name)}"
+              qr = qrcode.QRCode(error_correction=qrcode.constants.ERROR_CORRECT_Q, box_size=10, border=4)
               qr.add_data(raw_url)
               qr.make(fit=True)
               img = qr.make_image(fill_color="black", back_color="white").convert("RGB")
 
+              # Measure heading text and build output image
               draw = ImageDraw.Draw(img)
               try:
                   bbox = draw.textbbox((0,0), heading, font=font)
                   text_w, text_h = bbox[2]-bbox[0], bbox[3]-bbox[1]
-              except Exception:
+              except:
                   text_w, text_h = draw.textsize(heading, font=font)
 
-              padding_top = 6
-              padding_bottom = 12
-              margin_side = 16
+              padding_top, padding_bottom, margin_side = 6, 12, 16
               new_w = max(img.width, text_w + 2*margin_side)
               new_h = img.height + padding_top + text_h + padding_bottom
-
-              new_img = Image.new("RGB", (new_w, new_h), "white")
-              new_img.paste(img, ((new_w - img.width)//2, 0))
-
-              draw = ImageDraw.Draw(new_img)
+              out_img = Image.new("RGB", (new_w, new_h), "white")
+              out_img.paste(img, ((new_w - img.width)//2, 0))
+              draw = ImageDraw.Draw(out_img)
               draw.text(((new_w - text_w)//2, img.height + padding_top), heading, fill="black", font=font)
 
               out_path = out_dir / f"{base}.png"
-              new_img.save(out_path)
-              print(f"Created: {out_path}  (URL: {raw_url})")
-
-          if not found:
-              print("No PDFs found in pdfs/ — check earlier steps/logs.")
+              out_img.save(out_path)
+              print(f"Created QR: {out_path} (URL: {raw_url})")
           PY
 
+      # Debug: show QR codes
       - name: Debug - list QR codes
         run: |
-          echo "QRs generated:"
+          echo "QR codes generated:"
           ls -la qr-codes || true
 
+      # Upload artifacts (optional)
       - uses: actions/upload-artifact@v4
         with:
           name: docs-and-qrs
@@ -202,9 +159,10 @@ jobs:
             pdfs
             qr-codes
 
+      # Commit changes
       - uses: EndBug/add-and-commit@v9
         with:
-          message: 'Updated pdfs and QR codes'
+          message: 'Updated PDFs and QR codes'
           add: |
             pdfs/*.pdf --force
             qr-codes/*.png --force
