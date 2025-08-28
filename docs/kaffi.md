@@ -6,12 +6,12 @@
 
 | Tákn | Skýring |
 |-------|---------|
-| `⏻` | **Kveikja/slökkva** – ýttu til að kveikja á eða slökkva á vélinni. |
-| `🌫` | **Gufa** – virkjar gufutúðuna fyrir mjólkurfroðu eða heitt vatn. |
-| `☕` (vinstri hlið, efri) | **Einn bolli, lítið kaffi** (espresso). |
-| `☕☕` (vinstri hlið, neðri) | **Tveir bollar, lítið kaffi** (tveir espressó bollar). |
-| `☕` (hægri hlið, efri) | **Einn bolli, mikið kaffi** (lungo / venjulegt kaffi). |
-| `☕☕` (hægri hlið, neðri) | **Tveir bollar, mikið kaffi** (tveir stórir bollar). |
+| OnOFf | **Kveikja/slökkva** – ýttu til að kveikja á eða slökkva á vélinni. |
+| Gufa | **Gufa** – virkjar gufutúðuna fyrir mjólkurfroðu eða heitt vatn. |
+| Bolli (vinstri hlið, efri) | **Einn bolli, lítið kaffi** (espresso). |
+| Bollar (vinstri hlið, neðri) | **Tveir bollar, lítið kaffi** (tveir espressó bollar). |
+| BOlli (hægri hlið, efri) | **Einn bolli, mikið kaffi** (lungo / venjulegt kaffi). |
+| Bollar (hægri hlið, neðri) | **Tveir bollar, mikið kaffi** (tveir stórir bollar). |
 
 ## Snúningshjól – Styrkur kaffis
 Snúningshjólið í miðjunni stillir styrk kaffisins:
