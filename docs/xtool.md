@@ -4,7 +4,7 @@
 
 ## Almenn notkun
 
-***TODO***
+Notið handfangið á græna glerinu til að lyfta því upp og niður. Ekki leggja neitt ofan á tækið. Ekki vera með neinn vökva eða matvæli í nánd við tækið.
 
 ## Snúningstól
 
