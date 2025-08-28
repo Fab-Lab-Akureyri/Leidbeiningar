@@ -7,7 +7,7 @@
 | Tákn | Skýring |
 |-------|---------|
 | `⏻` | **Kveikja/slökkva** – ýttu til að kveikja á eða slökkva á vélinni. |
-| `🌫` | **Gufa** – virkjar gufutúðuna fyrir mjólkurfroðu eða heitt vatn. |
+| `💨` | **Gufa** – virkjar gufutúðuna fyrir mjólkurfroðu eða heitt vatn. |
 | `☕` (vinstri hlið, efri) | **Einn bolli, lítið kaffi** (espresso). |
 | `☕☕` (vinstri hlið, neðri) | **Tveir bollar, lítið kaffi** (tveir espressó bollar). |
 | `☕` (hægri hlið, efri) | **Einn bolli, mikið kaffi** (lungo / venjulegt kaffi). |
