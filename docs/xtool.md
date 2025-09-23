@@ -124,22 +124,27 @@ Síðan opnar þú heimasíðuna [Carbide copper](https://carbide3d.com/copper/)
 Fyrst velur þú **B.cu** skjalið og síðan **drill file** skjalið. **Edge cuts** skipta ekki máli í þessu. Á endanum velur þú: **Export as separate G Codes**
 
 ![Carbide](images/xtool/image-010.png)
+
 ![Carbide](images/xtool/image-011.png)
 
 Síðan borar þú út gotin með fræsinum og færir plötuna yfir í laser skurðarvélina.
 
 Góðar ábendingar:
    1.​ Festa plötuna vel
+
    2.​ Muna að núllstilla **Z** ásinnn
+   
    3.​ **Ryksuga eftir sig**
 
-#### Laser vél
+#### Laser
 
 Fyrst staðsetur þú plötu þína í vélinni og ýtir svo á ​![Myndavel](images/xtool/image-013.png) í xTool forritinu. Eftir það ætti að koma mynd af plötunni þinni í forritinu. 
 
 Síðan ýtir þú á ![Mynd](images/xtool/image-012.png) og velur SVG skjalið sem þú varst að búa til úr **Inkscape**. Mikilvægt er að staðsetja teikninguna rétt yfir holunum. 
 
 Því miður er ekki hægt að treysta myndavélinni alveg og þarf því að taka eina umferð til að staðsetja plötuna rétt.
+
+**Mikilvægt:** Nauðsynlegt er að handstilla fókusinn eftir að hafa notað *autofocos*. Gott er að miða við að hækka um 3mm. 
 
 Stillingarnar sem eru notaðar eru þessar:
 
