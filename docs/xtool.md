@@ -10,6 +10,8 @@ Notið handfangið á græna glerinu til að lyfta því upp og niður. Ekki leg
 
 ***TODO***
 
+This needs to be finished. 
+
 ## Rafrásagerð
 
 ## Ath: Skjal í vinnslu
