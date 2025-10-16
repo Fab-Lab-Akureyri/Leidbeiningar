@@ -53,7 +53,7 @@ Xtool stillingar:
     Höfundar: Jóhann Ernir og Kristján Örn - nemendur í rafeindavirkjun 2025
     Uppfært: Árni Björnsson
 
-#### Kicad
+#### Kicad - SVG
 
 Eftir að hafa teiknað rásina þína í [KiCAD](http://kicad.org/), þá viltu bæta við **polygons**. ![polygons](images/xtool/image-000.png)
 
@@ -68,6 +68,23 @@ Ef þú vilt svo færa línur fram og til baka til að eyjurnar tengist, getur �
 Best er að hafa sem flestar eyjar tengdar.
 
 Svo ýtir þú á **Plot** og plottar skjalið sem **SVG**.
+
+#### KiCad - DXF FTW!!
+
+Kicad -> Plot -> DXF 
+
+Haka við "Plot graphic items using their contours"
+
+Nota millimetra
+
+Nota drill place file origin
+
+
+DXF má svo opna beint í Xtool
+
+Bæta við kassa utan um rásina
+
+Velja allt, gera compound vector! 
 
 #### Inkscape
 
