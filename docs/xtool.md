@@ -16,27 +16,24 @@ This needs to be finished.
 
 ## Ath: Skjal í vinnslu
 
-![Fab Academy](images/xtool/galvo.jpg)
+### KiCad - DXF FTW!!
 
-### Hlekkir: 
+Kicad -> Plot -> DXF 
 
-- 1: [mikeysklar](https://github.com/mikeysklar/cnc-fiber-laser-pcb)
-- 2: [sphawes](https://github.com/sphawes/fiber-laser-pcb-fab)
+Haka við "Plot graphic items using their contours"
 
-### Styttri skref
+Nota millimetra
 
-#### KiCad 
+Nota drill place file origin
 
-- Kicad -> plot -> svg -> Negative plot
 
-#### Inkscaep
+DXF má svo opna beint í Xtool
 
-- Inkscape -> Select all -> ungroup oft. 
-- Velja allt hvíta og gera "Stroke to path"
-- Með allt hvíta valið, gera ctrl + "+" (Path -> Union)
-- Aðlaga stærðina á svarta bakgrunninn, velja allt og gera ctrl + "-" (Path -> Difference)
+Bæta við kassa utan um rásina
 
-Xtool stillingar:
+Velja allt, gera compound vector! 
+
+#### Xtool stillingar:
 
 - FIBER IR
 - Power 100%
@@ -53,6 +50,19 @@ Xtool stillingar:
     Höfundar: Jóhann Ernir og Kristján Örn - nemendur í rafeindavirkjun 2025
     Uppfært: Árni Björnsson
 
+### Styttri skref
+
+#### KiCad 
+
+- Kicad -> plot -> svg -> Negative plot
+
+#### Inkscape
+
+- Inkscape -> Select all -> ungroup oft. 
+- Velja allt hvíta og gera "Stroke to path"
+- Með allt hvíta valið, gera ctrl + "+" (Path -> Union)
+- Aðlaga stærðina á svarta bakgrunninn, velja allt og gera ctrl + "-" (Path -> Difference)
+
 #### Kicad - SVG
 
 Eftir að hafa teiknað rásina þína í [KiCAD](http://kicad.org/), þá viltu bæta við **polygons**. ![polygons](images/xtool/image-000.png)
@@ -68,23 +78,6 @@ Ef þú vilt svo færa línur fram og til baka til að eyjurnar tengist, getur �
 Best er að hafa sem flestar eyjar tengdar.
 
 Svo ýtir þú á **Plot** og plottar skjalið sem **SVG**.
-
-#### KiCad - DXF FTW!!
-
-Kicad -> Plot -> DXF 
-
-Haka við "Plot graphic items using their contours"
-
-Nota millimetra
-
-Nota drill place file origin
-
-
-DXF má svo opna beint í Xtool
-
-Bæta við kassa utan um rásina
-
-Velja allt, gera compound vector! 
 
 #### Inkscape
 
@@ -180,3 +173,10 @@ Passa að hafa **Fiber IR** valið
 * **Advanced settings:** **Incremental & Cross hatch** 
 
 Gott ráð er að þrífa plötuna vel með Ísóprópanóli fyrir skurð, minnstu óhreinindi og fita geta skemmt fyrir. 
+
+![Fab Academy](images/xtool/galvo.jpg)
+
+### Hlekkir: 
+
+- 1: [mikeysklar](https://github.com/mikeysklar/cnc-fiber-laser-pcb)
+- 2: [sphawes](https://github.com/sphawes/fiber-laser-pcb-fab)
