@@ -14,7 +14,7 @@ This needs to be finished.
 
 ## Rafrásagerð
 
-## Ath: Skjal í vinnslu
+__Ath: Skjal í vinnslu__
 
 ### KiCad - DXF FTW!!
 
@@ -25,7 +25,6 @@ Haka við "Plot graphic items using their contours"
 Nota millimetra
 
 Nota drill place file origin
-
 
 DXF má svo opna beint í Xtool
 
