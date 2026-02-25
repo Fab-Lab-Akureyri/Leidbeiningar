@@ -2,7 +2,7 @@
 
 |                   |   300 DPI Raster<br>Speed / Power | 400 DPI Raster<br>Speed / Power  | 600 DPI Raster <br>Speed / Power | Vector Cutting <br>Speed / Power / Frequency
 |   ---             |   ---         |   ---             |   ---             |   ---
-|   Krossviður      |   60 / 100    |   80 / 100        |   <b>100 / 100 </b>      |   <b>3 mm</b> - 26 / 100 / 500<br><b>6 mm</b> - 16 / 100 / 500<br>
+|   Krossviður      |   60 / 100    |   80 / 100        |   <b>100 / 50 </b>      |   <b>3 mm</b> - 26 / 100 / 500<br><b>6 mm</b> - 16 / 100 / 500<br>
 |   MDF             |   60 / 100    |   80 / 100        |   <b>100 / 100 </b>      |   <b>4 mm</b> - 30 / 100 / 500<br><b>6 mm</b> - 25 / 100 / 500<br><b>9 mm</b> - 12 / 100 / 500 (2x)
 |   Akrýl           |   100 / 50    |   100 / 40        |   <b>100 / 30  </b>      |   <b>3 mm</b> - 20 / 100 / 5000<br><b>4 mm</b> - 16 / 100 / 5000<br><b>6 mm</b> - 14 / 100 / 5000<br>
 |   AlumaMark       |   100 / 30    |   100 / 25        |   <b>100 / 20  </b>      |   N/A
