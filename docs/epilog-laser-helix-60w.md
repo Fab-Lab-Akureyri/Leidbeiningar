@@ -16,4 +16,4 @@
 |   Cerdec f/stál   |   N/A         |   35 / 100        |   <b>40 / 100 </b>       |   N/A
 |   Gúmmí           |   20 / 100    |   30 / 100        |   <b>40 / 100 </b>       |   25 / 100 100
 |   Gallaefni       |   90 / 20     |                   |                   |   
-|   Tvílit merkispjöld |            |                   |   b>100 / 30 </b>        | 40 / 100 / 5000
+|   Tvílit merkispjöld |            |                   |   <b>100 / 30 </b>        | 40 / 100 / 5000
