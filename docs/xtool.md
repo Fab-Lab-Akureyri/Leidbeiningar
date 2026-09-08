@@ -4,33 +4,63 @@
 
 ## Almenn notkun
 
+__Ath: Skjalið er í vinnslu__
+
 Notið handfangið á græna glerinu til að lyfta því upp og niður. Ekki leggja neitt ofan á tækið. Ekki vera með neinn vökva eða matvæli í nánd við tækið.
 
-## Snúningstól
-
-***TODO***
-
-This needs to be finished. 
 
 ## Rafrásagerð
 
-__Ath: Skjal í vinnslu__
+### KiCad && DXF
 
-### KiCad - DXF FTW!!
+Einfalt er að færa rás úr KiCad yfir í xTool. Hér eru leiðbeiningar fyrir það.
 
-Kicad -> Plot -> DXF 
+Í KíCad PCB Editor velur þú **File -> Plot** og velur **DXF** 
 
-Haka við "Plot graphic items using their contours"
+Haka við:
 
-Nota millimetra
+- **Plot graphic items using their contours**
 
-Nota drill place file origin
+- Nota **millimetra**
 
-DXF má svo opna beint í Xtool
+- Nota **Drill place file origin**
 
-Bæta við kassa utan um rásina
+![KiCad DXF](images/xtool/xtool00.jpg)
 
-Velja allt, gera compound vector! 
+DXF má svo opna beint í xTool Studio sem er uppsett á tölvunni við xTool laserinn. 
+
+Í xTool Studio byrjar þú að velja **New Project**
+
+Þú staðsetur plötuna í vélinni, ofan á svörtu skurðarplötunni, þannig að rauði og blái punkturinn sé í miðjunni. 
+
+Stillið fókusinn handvirkt þannig að punktarnir séu ofan á hvor öðrum. 
+
+Takið mynd af vinnusvæðinu með myndarvélartákninu. Þá ætti að koma mynd af plötunni í forritinu.
+
+![xTool](images/xtool/xtool01.jpg)
+
+Smelltu núna á **Material** og veldu ""PCB rafásagerð"" og svo **Apply**. 
+
+![xTool](images/xtool/xtool02.jpg)
+
+Svo velur þú **Import** og opnar DXF skjalið sem þú bjóst til í KiCad. Þá ætti að koma upp mynd af rásinni þinni í forritinu.
+
+![xTool](images/xtool/xtool03.jpg)
+
+
+Næst þarf að gera kassa utan um rásina, t.d. horn í horn á brettinu sem þú ert að gera. Í sýnidæminu er notast við minni kassa.
+
+Kassatólið er valið á verkfærastikunni og dregið yfir rásina. 
+
+Veldu bæði kassann og rásina með því að halda inni **Shift** takkann og velja bæði. Þá getur þú gert **Create compound vector**. 
+
+![xTool](images/xtool/xtool04.jpg)
+
+Gættu þess að rásin sé svört að lit. Ef þú þarft að breyta litnum, hægriklikkar þú þá rásina og velur svartan. 
+
+Svo þarf að velja **Engrave**. Þá ætti þetta að líta svona út:
+
+![xTool](images/xtool/xtool05.jpg)
 
 #### Xtool stillingar:
 
@@ -38,11 +68,22 @@ Velja allt, gera compound vector!
 - Power 100%
 - Speed 700
 - Passes 10
-- Lines per cm: 140
+- Lines per cm: 200
 - Bi-directional
 - Incremental
 - Cross-hatch
-- Autofocus + 1.5mm (Handvirkt, á stjórnborðinu, ekki stimpla inn í forritið)
+
+Ýtið á **Process**, tölvan reiknar út ferilinn, ýtið svo á **Start**. Þegar skráin er komin yfir í vélina, pípir tækið og þú getur ýtt á stóra græna takkann til að byrja. 
+
+**ATH: Hafið kveikt á soginu og hlífina alveg niðri!**
+
+**ATH: Ef laserinn virðist lítið sem ekkert gera, þarf að stilla fókusinn!**
+
+## Snúningstól
+
+***TODO***
+
+This needs to be finished. 
 
 ### Leiðbeiningar á íslensku:
 
